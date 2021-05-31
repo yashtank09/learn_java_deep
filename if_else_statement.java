@@ -18,13 +18,13 @@ class ifelse{
         if(this.age>18){
             System.out.println("You are not eligible for it...");
         }else{
-            System.out.println("You are not eligible for it...");
+            System.out.println("You are eligible for it...");
         }
     }
 }
 public class if_else_statement {
     public static void main(String[] args) {
-        ifelse age = new ifelse(22);
+        ifelse age = new ifelse(15);
         age.ifstate();
     }
 }
