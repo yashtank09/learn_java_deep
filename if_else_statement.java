@@ -15,7 +15,7 @@ class ifelse{
             }
         */
         // Program to check whter the age is eligible or not.
-        if(this.age>18){
+        if(this.age<18){
             System.out.println("You are not eligible for it...");
         }else{
             System.out.println("You are eligible for it...");
