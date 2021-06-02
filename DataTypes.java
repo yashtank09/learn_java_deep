@@ -33,6 +33,17 @@ public class DataTypes {
         // boolen | Default value: true/false(1/0) |size:  byte | 0 to 65535
         boolean bool = true;
         System.out.println("boolean DataType: "+ bool);
+        
+        /*
+            --------Rules for datatypes--------
+            1. Case Sensitive                                      |    int amt; int Amt; This is give an error[int x; float x;] Allowed[int x; float X;]
+            2. Contains Alphabet, _, $                             |    int room2; char room_name; float Total$amount; 
+            3. Starts with Alphabet, _, $                          |    {char 25cb;}is not allowed, char cb25; is allowed
+            4. Should not be a keyword                             |    more than 48 keyword have java
+            5. Should not be a class name, if class is also in use |    Aboid that that's not propper
+            6. No limit on length of name                          |
+            7. Follow Camel Cases                                  |    rollNumber (This is camel cases variable)
+        */
     }
 
 }
