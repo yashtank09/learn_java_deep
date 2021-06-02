@@ -1,3 +1,5 @@
+import java.util.function.DoublePredicate;
+
 /*
     Literals are constant values that are used in program.
 
@@ -46,6 +48,25 @@ public class literals {
         System.out.println(b2);
         System.out.println(b3);
         System.out.println(b4);
+
+        // long ll = 125;
+        // long ll = 999999999999; it will raise error
+        long ll = 999999999999L; // long literal
+        System.out.println(ll);
+        long l2 = 999_999_99; //for readability of code | underscore should be in between numbers not at start and end
+        System.out.println(l2);
+        double dbl = 15_250.256;
+        System.out.println(dbl);
+        // double dbl = 15_268.6568 | Here we have to saperate numbers before decimal point in between numbers not at the end or start
+        // You can not write like this | _15568_._45454_ <- *Wrong
+
+        // int i = 125L; integer is small so long literal can not be applied
+
+        float fl = 14.55f; // without float literal it will raise an error
+        double db = 14.55;
+        System.out.println(fl);
+        System.out.println(db);
+        
 
     }
 }
