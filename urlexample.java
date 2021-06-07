@@ -1,4 +1,3 @@
-package com.javatpoint;  
 import java.net.*;   
 public class urlexample {   
     public static void main(String[] args){    

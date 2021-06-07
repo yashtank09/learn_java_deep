@@ -5,6 +5,7 @@ public class DemoStringInput {
         Scanner scan = new Scanner(System.in);
         System.out.println("Please enter proper value: ");
         String input = scan.nextLine();
-        System.out.println("User input: " + input); 
+        System.out.println("User input: " + input);
+        scan.close();
     }
 }

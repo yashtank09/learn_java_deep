@@ -33,5 +33,6 @@ public class stringReverce
         
         // Finally Print the reverse string that User inputed
         System.out.println("Reversed String is ready: "+reversed_String);
+        scan.close();
     }
 } 

@@ -1,5 +1,3 @@
-import java.util.function.DoublePredicate;
-
 /*
     Literals are constant values that are used in program.
 
