@@ -21,5 +21,11 @@ public class UnaryOperator {
         System.out.println(~q);//9 (positive of total minus, positive starts from 0)  
         System.out.println(!c);//false (opposite of boolean value)  
         System.out.println(!d);//true
+//----------------------------------------------------------------------
+        // Preincrement & Postincrement \\
+        int y = 5, u;
+        u = ++y; //Here first value of 'y' is increment after that it assign to 'u'
+        // u = y++; | Here first value of 'y' is assign to 'u' then increment
+        System.out.println(u);
     }
 }
