@@ -1,6 +1,10 @@
 public class UnaryOperator {
     public static void main(String[] args) {
-        int x=10;  
+        // Increment or decrement formula are same 
+        // if we choos variable Y so increment process is as following
+        // Y = Y + 1 or decrement Y = Y - 1
+        
+        int x=10;
         System.out.println(x++);//10 (11)   It's colde Post increment
         System.out.println(++x);//12        It's pre increment
         System.out.println(x--);//12 (11)   It's post decrement
@@ -24,8 +28,24 @@ public class UnaryOperator {
 //----------------------------------------------------------------------
         // Preincrement & Postincrement \\
         int y = 5, u;
-        u = ++y; //Here first value of 'y' is increment after that it assign to 'u'
+        u = y++; //Here first value of 'y' is increment after that it assign to 'u'
         // u = y++; | Here first value of 'y' is assign to 'u' then increment
-        System.out.println(u);
+        System.out.println(y+" "+u);
+
+        float i = 1.8f;
+        i++;
+        System.out.println("Value of float type: "+i);
+        
+        char m = 'Y';
+        m++;
+        System.out.println("Value of char type: " + m);
+
+        short f = 6;
+        // this modifies same data
+        f++; // Here value of short f is changed by increment and also the datatype donsn't change
+        // if we write short datatype incremtn like this f = f + 1 it will raise an error because
+        // the value of f after increment is becomes Integer type
+        System.out.println(f);
+
     }
 }
