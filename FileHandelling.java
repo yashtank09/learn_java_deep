@@ -11,13 +11,20 @@ public class FileHandelling {
         //     a = scn.nextLine();
         // }
         // scn.close();
-        
-        int i=1;
-        while (sc.hasNext()) {
-            String s=sc.nextLine();
-            System.out.println(i + " " + s);
-            i++;
+
+        // int i=1;
+        // while (sc.hasNext()) {
+        //     String s=sc.nextLine();
+        //     System.out.println(i + " " + s);
+        //     i++;
+        // }
+
+        // Using For loop
+        for(int i = 1; sc.hasNextLine(); i++){
+            System.out.println(i + " " + sc.nextLine());
         }
+
+
 
         /*
             This will print every live after hiting enter and the challange was the same and I was confused about that.
