@@ -1,5 +1,5 @@
 ---
 ---
-This is an assignment folder for my collage assignments.
+Learning Java in deep
 ---
 ---
