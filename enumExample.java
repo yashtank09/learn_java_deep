@@ -9,6 +9,8 @@ import java.util.EnumMap;
  * 
  * WebContent: https://www.javatpoint.com/enum-in-java#:~:text=Java%20Enums%20can%20be%20thought,own%20data%20type%20like%20classes.
  * 
+ * Constructor of enum type is private. If you don't declare private compiler internally creates private constructor.
+ * 
  */
 
 // Created `enum` outside the class using 'enum' keyword
