@@ -1,5 +1,4 @@
 package OOPJ;
-import java.lang.reflect.Method;
 
 /**
  * classobj
@@ -35,7 +34,7 @@ class demoobj{
         System.out.println("Hii I'm Protected Method");
     }
 }
-public class classobj {
+public class ClassMethodsSetandGet {
 
     public static void main(String[] args) {
 

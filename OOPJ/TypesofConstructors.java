@@ -10,9 +10,6 @@ package OOPJ;
  */
 
 import java.util.Scanner;
-import java.util.jar.Attributes.Name;
-
-import javax.print.attribute.standard.MediaSize.NA;
 
 class A{
     int roll;
@@ -49,10 +46,19 @@ class A{
         System.out.println(roll + " " + Name + " " + mobileNo);
     }
 }
-public class classobj2 {
+public class TypesofConstructors {
     public static void main(String[] args) {
+        
+        // Scanner obj
         Scanner scn = new Scanner(System.in);
-        A stud = new A(scn.nextInt(), scn.next(), scn.nextLong());
+
+        // We pass theree argument as userInput and there's three constructor that have differant parameters
+        A stud = new A(scn.nextInt(), scn.next());
+        
+        // Close Scanner obj.
+        scn.close();
+
+        // Displaying objects
         stud.disp();
     }
 }

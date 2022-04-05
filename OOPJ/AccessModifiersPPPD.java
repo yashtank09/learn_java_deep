@@ -1,8 +1,13 @@
 package OOPJ;
 /* 
  *  access modifiers & static methods/Variables 
- *      PUBLIC, PRIVATE, PROTECTED.
- *  This example is for knowing access blocks of variable, class, and methods 
+ *      DEFAULT     
+ *      PUBLIC
+ *      PRIVATE
+ *      PROTECTED
+ * 
+ *  This example is for knowing access blocks of variable, class, and methods
+ * 
  */
 class accessModifiers{
     private String privateId = "Private Variable";
@@ -38,7 +43,7 @@ class testModifiers{
         System.out.println(a.publicId);
     }
 }
-public class classobj3 {
+public class AccessModifiersPPPD {
     public static void main(String[] args) {
         accessModifiers a = new accessModifiers();
         a.displayVar(); 
