@@ -1,7 +1,7 @@
 package OOPJ;
 
 class ModifiersWithMethods{
-
+    
     String ModifiersWithMethods(){
         String a = "This is Constructor of Super Class Constructor \n";
         return a;
@@ -20,6 +20,20 @@ class ModifiersWithMethods{
     // Protected method can user everywhere except outof the package
     protected int Three(){
         return 15000;
+    }
+    
+    // creating a outer class object
+    accessModifiers accessClass = new accessModifiers();
+    protected void display(){
+        // Printing the outer class varibales here
+        
+        // Printing Protected variable
+        System.out.println(accessClass.protectedID);
+        
+        // Printing Public variable
+        System.out.println(accessClass.publicId);
+
+            // --------! Here we can not use Priate variable because private variable scope is within the class
     }
 }
 
@@ -48,6 +62,8 @@ public class MethodswithAccessModifierAndInheritances {
         */
         System.out.println("This is Object of PROTECTED method of Other class: \t" + Mobj.Three());
         
+        // Calling The AccessModifiersPPPD class
+        accessModifiers accessClass = new accessModifiers();
 
     }
 }
