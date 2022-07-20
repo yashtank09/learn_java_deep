@@ -9,7 +9,8 @@ public class AreaofTriangle {
         base = scan.nextFloat();
         height = scan.nextFloat();
 
-        area = base * height*0.5f;
+        // area = base * height*0.5f;
+        area = base * height/2;
         System.out.println("Area of triangle is: "+ area);
 
         // Another formula for finding area of triangle

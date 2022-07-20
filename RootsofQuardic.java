@@ -8,7 +8,7 @@ public class RootsofQuardic {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter value of a, b, c: ");
-
+ 
         a = sc.nextInt();
         b = sc.nextInt();
         c = sc.nextInt();
