@@ -6,7 +6,6 @@ public class ReverseTriangle {
             for(int j=4; j>=i; j--)
                 System.out.print(x);
             System.out.println();
-            System.out.println();
         }
     }
 }

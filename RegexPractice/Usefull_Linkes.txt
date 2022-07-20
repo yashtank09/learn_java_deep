@@ -1,0 +1,11 @@
+Oracle Docs:
+- https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/package-summary.html - java.util.regex;
+- https://docs.oracle.com/javase/8/docs/api/java/util/regex/Matcher.html - Matcher Class
+
+Stackoverflow:
+- https://stackoverflow.com/questions/24644334/regex-for-min-8-characters-and-at-least-1-number
+- https://stackoverflow.com/questions/336210/regular-expression-for-alphanumeric-and-underscores
+- https://stackoverflow.com/questions/47416290/regex-java-with-a-specific-start-and-then-anything-but-some-characters
+
+Practitioner:
+- https://regexr.com/6pifa

@@ -7,7 +7,7 @@ public class tests{
         // System.out.println("SUM->" + (4+5));
         // System.out.println("Division->" + a);
         // System.out.println(4+5);
-        int i = 5-4;
+       /* int i = 5-4;
         switch(i) {
             case 0:
                 System.out.println("Zero!!!!");
@@ -24,6 +24,11 @@ public class tests{
                     System.out.println("That's Wrong number....");
                 }
                 break;
-        }
+        }*/System.out.println("Hellow Yash First main method");
+    }
+    public static void main(String args[]) {
+        System.out.println(args[1]);
+        System.out.println("Hello Yash this is second method");
+        // Testing 2 main methods can compile or not?
     }
 }
