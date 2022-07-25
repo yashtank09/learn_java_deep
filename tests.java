@@ -25,10 +25,14 @@ public class tests{
                 }
                 break;
         }*/System.out.println("Hellow Yash First main method");
-    }
-    public static void main(String args[]) {
+    //}
+   /*public static void main(String args[]) {
         System.out.println(args[1]);
         System.out.println("Hello Yash this is second method");
         // Testing 2 main methods can compile or not?
+    }*/
+    
+    String s = "12345678";
+    System.out.println(s.matches("[0-9]+[A-F]+"));
     }
 }
