@@ -20,10 +20,10 @@ class Result {
     public static int simpleArraySum(List<Integer> ar) {
         // Write your code here
         int sum = 0;
-        for(int i=0; i < ar.size(); i++){
+        for (int i = 0; i < ar.size(); i++) {
             sum += ar.get(i);
         }
-        return sum;      
+        return sum;
     }
 }
 
@@ -35,8 +35,8 @@ public class sumofArrayInteger {
         int arCount = Integer.parseInt(bufferedReader.readLine().trim());
 
         List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+                .map(Integer::parseInt)
+                .collect(toList());
 
         int result = Result.simpleArraySum(ar);
 
