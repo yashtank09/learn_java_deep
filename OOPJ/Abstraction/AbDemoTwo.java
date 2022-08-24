@@ -4,7 +4,7 @@ package Abstraction;
 public class AbDemoTwo {
     public static void main(String[] args) {
         Iphone obj = new Iphone();
-        Samsung obj1 = new Samsung();
+        // Samsung obj1 = new Samsung();
         show(obj);
     }
     

@@ -1,4 +1,3 @@
-package OOPJ;
 /* 
  *  access modifiers & static methods/Variables 
  *      DEFAULT     
