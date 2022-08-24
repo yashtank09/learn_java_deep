@@ -1,4 +1,3 @@
-package OOPJ;
 /*
  *  ```This is Basic class and object example 
  */
