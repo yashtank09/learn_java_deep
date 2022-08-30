@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 public class ObjectPassingasParameter {
     static void welcome(String n){ // parameter `n` is pointing to actual object | here it just copy the reference of that object

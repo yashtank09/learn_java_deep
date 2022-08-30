@@ -1,5 +1,3 @@
-package OOPJ;
-
 class ModifiersWithMethods{
     
     String ModifiersWithMethods(){

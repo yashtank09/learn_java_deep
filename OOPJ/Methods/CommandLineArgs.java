@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 public class CommandLineArgs {
 	public static void main(String args[]){

@@ -5,7 +5,6 @@
  *  
  */
 import java.util.Scanner;
-import OOPJ.calculatorClass;
 
 public class AccessCalculator {
     public static void main(String[] args) {

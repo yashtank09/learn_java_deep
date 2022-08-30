@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 public class VarargsExamples {
     // Maximum of Numbers using Varargs

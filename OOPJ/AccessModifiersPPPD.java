@@ -13,7 +13,7 @@ class accessModifiers{
     public String publicId = "Public Variable";
     protected String protectedID = "Protected Variable";
     void setVar(){
-        String SetVar = "Method Variable";
+        // String SetVar = "Method Variable";
     }
     void displayVar(){
         System.out.println("This is --: " + privateId + "of accessModifiers Class.");

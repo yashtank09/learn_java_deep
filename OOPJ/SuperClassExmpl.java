@@ -1,4 +1,3 @@
-package OOPJ;
 /**
  *  The super keyword in Java is a reference variable which is used to refer immediate parent class object.
  *

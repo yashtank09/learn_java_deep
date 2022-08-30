@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 // Find greatest common divisor
 /* 
  *  m = 25; n = 15

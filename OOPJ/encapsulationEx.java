@@ -1,4 +1,3 @@
-package OOPJ;
 /*
  *  https://www.tutorialspoint.com/java/java_encapsulation.htm#:~:text=Encapsulation%20in%20Java%20is%20a,methods%20of%20their%20current%20class.
  *  

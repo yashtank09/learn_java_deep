@@ -1,5 +1,3 @@
-package OOPJ;
-
 //Creating java class for calculator which is in OOPJ package
 public class calculatorClass {
     private double value1, value2;

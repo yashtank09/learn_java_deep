@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 /*
     Method:

@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 public class NumberisPrimeMethod {
     static boolean isprime(int p){

@@ -1,5 +1,3 @@
-import java.net.uniloc;
-import java.time.Year;
 import java.util.Scanner;
 
 public class conditionalStatementsChallanges {

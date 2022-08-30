@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 public class ParameterPassingReturn {
     // void if the method does not return a value

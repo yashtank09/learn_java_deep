@@ -1,4 +1,3 @@
-package OOPJ;
 /* 
  * This is a class and object example with different parameter
  * 

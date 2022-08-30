@@ -1,4 +1,4 @@
-package OOPJ.Recursion;
+package Recursion;
 
 public class RecursiveMethod {
 

@@ -1,4 +1,4 @@
-package OOPJ.Methods;
+package Methods;
 
 public class SumofCommandLineArgs {
     public static void main(String[] args) {
