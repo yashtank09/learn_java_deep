@@ -7,7 +7,7 @@ class BoxThis{
     double depth;
     
     /* 
-        "this" can be used inside any method, a raferance variable that referes to the current object.
+        "this" can be used inside any method, a raferance variable that referes to the current object or datamembers/properties.
     */
 
     /* 
@@ -21,6 +21,7 @@ class BoxThis{
 
     // Parameterised constructor with this keyword
     // Instance Variable Hiding
+    // without 'this' keyword method will have name conflict
     BoxThis(double height, double width, double depth){
         this.height = height;
         this.width = width;

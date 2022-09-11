@@ -23,7 +23,7 @@ class Car{
 
 }
 
-class Company extends Car{
+class Company extends cars{
     
     public void VolksVegon(){
         System.out.println("Company: Volks Vagon");
@@ -63,7 +63,7 @@ public class MultiLevelInheritEx {
         FuleType f = new FuleType();
         f.VolksVegon();
         f.Maxspeed();
-        f.Vihecle();
+        // f.Vihecle();
         f.petrol();        
     }    
 }

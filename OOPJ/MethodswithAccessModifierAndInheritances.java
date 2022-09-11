@@ -50,7 +50,7 @@ public class MethodswithAccessModifierAndInheritances {
 
 
         // DemoIN is chiled class that inherit all methods of ModifiersWithMethods
-        System.out.println("This is Object of PUBLIC method of Other class: \t" + Mobj.One());
+        System.out.println("This is Object of PUBLIC method of Other class: " + Mobj.One());
         /*
         
             ERROR: The method Two() from the type ModifiersWithMethods is not visible
@@ -58,8 +58,9 @@ public class MethodswithAccessModifierAndInheritances {
             System.out.println("This is Object of PUBLIC method of Other class: \t" + Mobj.Two());
 
         */
-        System.out.println("This is Object of PROTECTED method of Other class: \t" + Mobj.Three());
+        System.out.println("This is Object of PROTECTED method of Other class: " + Mobj.Three());
         
+
         // Calling The AccessModifiersPPPD class
         accessModifiers accessClass = new accessModifiers();
 
