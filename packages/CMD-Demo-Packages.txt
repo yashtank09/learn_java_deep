@@ -1,0 +1,199 @@
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac -d . package_Demo.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages
+
+08-10-2022  11:00    <DIR>          .
+07-10-2022  23:37    <DIR>          ..
+08-10-2022  10:40    <DIR>          MyPack
+08-10-2022  10:53               127 package_Demo.java
+08-10-2022  10:53               127 package_Demo2.java
+               2 File(s)            254 bytes
+               3 Dir(s)  49,693,384,704 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>cd MyPack
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack
+
+08-10-2022  10:40    <DIR>          .
+08-10-2022  11:00    <DIR>          ..
+08-10-2022  11:01               429 PackageDemo1.class
+               1 File(s)            429 bytes
+               2 Dir(s)  49,693,384,704 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>cd..
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac -d C:\package_Demo.java
+error: no source files
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac -d C:\ package_Demo.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac package_Demo2.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac package_Demo.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages
+
+08-10-2022  11:02    <DIR>          .
+07-10-2022  23:37    <DIR>          ..
+08-10-2022  10:40    <DIR>          MyPack
+08-10-2022  11:02               429 PackageDemo1.class
+08-10-2022  11:02               430 PackageDemo2.class
+08-10-2022  10:53               127 package_Demo.java
+08-10-2022  10:53               127 package_Demo2.java
+               4 File(s)          1,113 bytes
+               3 Dir(s)  49,695,744,000 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>del *.class
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac -d . package_Demo2.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages
+
+08-10-2022  11:03    <DIR>          .
+07-10-2022  23:37    <DIR>          ..
+08-10-2022  11:03    <DIR>          MyPack
+08-10-2022  10:53               127 package_Demo.java
+08-10-2022  10:53               127 package_Demo2.java
+               2 File(s)            254 bytes
+               3 Dir(s)  49,695,854,592 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>cd MyPack
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack
+
+08-10-2022  11:03    <DIR>          .
+08-10-2022  11:03    <DIR>          ..
+08-10-2022  11:01               429 PackageDemo1.class
+08-10-2022  11:03               430 PackageDemo2.class
+               2 File(s)            859 bytes
+               2 Dir(s)  49,695,723,520 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>cd..
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac -d . package_Demo3.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages
+
+08-10-2022  11:05    <DIR>          .
+07-10-2022  23:37    <DIR>          ..
+08-10-2022  11:05    <DIR>          MyPack
+08-10-2022  10:53               127 package_Demo.java
+08-10-2022  10:53               127 package_Demo2.java
+08-10-2022  11:05               136 package_Demo3.java
+               3 File(s)            390 bytes
+               3 Dir(s)  49,696,706,560 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>cd MyPack
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack
+
+08-10-2022  11:05    <DIR>          .
+08-10-2022  11:05    <DIR>          ..
+08-10-2022  11:05    <DIR>          innerPack
+08-10-2022  11:01               429 PackageDemo1.class
+08-10-2022  11:03               430 PackageDemo2.class
+               2 File(s)            859 bytes
+               3 Dir(s)  49,696,698,368 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>cd innderPack
+The system cannot find the path specified.
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>cd innerPack
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack
+
+08-10-2022  11:05    <DIR>          .
+08-10-2022  11:05    <DIR>          ..
+08-10-2022  11:05               440 PackageDemo2.class
+               1 File(s)            440 bytes
+               2 Dir(s)  49,703,727,104 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack>del *.class
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack>javac -d . package_Demo3.java
+error: file not found: package_Demo3.java
+Usage: javac <options> <source files>
+use --help for a list of possible options
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack>cd..
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>cd..
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>javac -d . package_Demo3.java
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages
+
+08-10-2022  11:05    <DIR>          .
+07-10-2022  23:37    <DIR>          ..
+08-10-2022  11:05    <DIR>          MyPack
+08-10-2022  10:53               127 package_Demo.java
+08-10-2022  10:53               127 package_Demo2.java
+08-10-2022  11:07               142 package_Demo3.java
+               3 File(s)            396 bytes
+               3 Dir(s)  49,701,695,488 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages>cd MyPack
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack
+
+08-10-2022  11:05    <DIR>          .
+08-10-2022  11:05    <DIR>          ..
+08-10-2022  11:07    <DIR>          innerPack
+08-10-2022  11:01               429 PackageDemo1.class
+08-10-2022  11:03               430 PackageDemo2.class
+               2 File(s)            859 bytes
+               3 Dir(s)  49,701,556,224 bytes free
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack>cd innerPack
+
+C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack>dir
+ Volume in drive C is Windows
+ Volume Serial Number is 2890-EBDB
+
+ Directory of C:\Yash Stuff\MCA\learn_java_deep\packages\MyPack\innerPack
+
+08-10-2022  11:07    <DIR>          .
+08-10-2022  11:05    <DIR>          ..
+08-10-2022  11:07               446 PackageDemo3.class
+               1 File(s)            446 bytes
+               2 Dir(s)  49,701,240,832 bytes free

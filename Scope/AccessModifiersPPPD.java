@@ -1,3 +1,4 @@
+package Scope;
 /* 
  *  access modifiers & static methods/Variables 
  *      DEFAULT     

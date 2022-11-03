@@ -1,0 +1,63 @@
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac -d . demo1.java
+------------------------------------------------------------------------------------------------------------------------------
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> dir
+
+
+    Directory: C:\Yash Stuff\MCA\learn_java_deep\Scope
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        08-10-2022     16:55                mypack1
+-a----        21-01-2022     17:11          21820 Access-Modifiers-in-Java.png
+-a----        08-10-2022     13:53           1907 AccessModifiersPPPD.java
+-a----        08-10-2022     16:55            182 demo1.java
+-a----        08-10-2022     13:53           2406 MethodswithAccessModifierAndInheritances.java
+
+------------------------------------------------------------------------------------------------------------------------------
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac Test1.java
+Test1.java:1: error: demo1 is not public in mypack1; cannot be accessed from outside package
+import mypack1.demo1;
+              ^
+Test1.java:5: error: cannot access demo1
+                demo1 d1 = new demo1();
+                ^
+  bad source file: .\demo1.java
+    file does not contain class demo1
+    Please remove or make sure it appears in the correct subdirectory of the sourcepath.
+2 errors
+
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac -d . demo1.java
+------------------------------------------------------------------------------------------------------------------------------
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac Test1.java
+Test1.java:7: error: a is not public in demo1; cannot be accessed from outside package
+                System.out.println(d1.a+d1.b+d1.c+d1.d);
+                                     ^
+Test1.java:7: error: b has private access in demo1
+                System.out.println(d1.a+d1.b+d1.c+d1.d);
+                                          ^
+Test1.java:7: error: c has protected access in demo1
+                System.out.println(d1.a+d1.b+d1.c+d1.d);
+                                               ^
+3 errors
+------------------------------------------------------------------------------------------------------------------------------
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac -d . demo2.java
+demo2.java:8: error: b has private access in demo1
+                System.out.println(d1.a+d1.b+d1.c+d1.d);
+                                          ^
+1 error
+------------------------------------------------------------------------------------------------------------------------------
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac -d . demo3.java
+demo3.java:7: error: b has private access in demo1
+                System.out.println(a+b+c+d);
+                                     ^
+1 error
+------------------------------------------------------------------------------------------------------------------------------
+PS C:\Yash Stuff\MCA\learn_java_deep\Scope> javac -d . demo4.java
+demo4.java:7: error: a is not public in demo1; cannot be accessed from outside package
+                System.out.println(a+b+c+d);
+                                   ^
+demo4.java:7: error: b has private access in demo1
+                System.out.println(a+b+c+d);
+                                     ^
+2 errors

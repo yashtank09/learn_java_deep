@@ -1,3 +1,4 @@
+package Scope;
 class ModifiersWithMethods{
     
     String ModifiersWithMethods(){
