@@ -1,4 +1,4 @@
-package MyPack.innerPack;
+package packages;
 
 // for using as package we have to make this class as public
 // also if it's public then we should have to named as file name

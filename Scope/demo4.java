@@ -1,5 +1,4 @@
-package mypack2;
-import mypack1.demo1;
+package Scope;
 // Non-Subclass within the same package
 public class demo4 extends demo1
 {

@@ -1,4 +1,4 @@
-package mypack1;
+package Scope;
 
 public class demo1
 {

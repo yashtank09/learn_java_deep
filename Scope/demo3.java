@@ -1,4 +1,4 @@
-package mypack1;
+package Scope;
 
 // Non-Subclass within the same package
 public class demo3 extends demo1

@@ -1,4 +1,4 @@
-import mypack1.demo1;
+package Scope;
 
 // Every possibilities are stored in cmd-testing file
 public class Test1{

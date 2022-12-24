@@ -1,8 +1,4 @@
-// Here if we do not make every class of package as public so they can not be accessible here
-import MyPack.package_Demo;
-import MyPack.package_Demo2;
-import MyPack.innerPack.package_Demo3;
-
+package packages;
 
 class TestPack{
 	public static void main(String args[]){
