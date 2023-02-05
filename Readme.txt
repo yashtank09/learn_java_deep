@@ -1,5 +1,0 @@
----
----
-Learning Java in deep
----
----
