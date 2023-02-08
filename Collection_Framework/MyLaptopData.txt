@@ -1,0 +1,6 @@
+#Laptop
+#Tue Feb 07 22:45:31 IST 2023
+Brand=HP
+Processor=Ryzen 5
+OS=Windows 10
+Model=Latitude

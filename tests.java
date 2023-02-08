@@ -19,7 +19,6 @@ public class tests{
                 try {
                     System.out.println("Your wrong bro...");
                 } catch (Exception e) {
-                    //TODO: handle exception
                     System.out.println(68+1);
                     System.out.println("That's Wrong number....");
                 }

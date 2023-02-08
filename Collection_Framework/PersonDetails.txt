@@ -1,0 +1,6 @@
+#Laptop
+#Tue Feb 07 22:34:12 IST 2023
+Name=Yash Tank
+Age=25
+Address=Junagadh
+Country=India

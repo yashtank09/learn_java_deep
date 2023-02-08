@@ -21,8 +21,8 @@ abstract public class test2{
     public abstract void me1();
     public static void main(String args[])
     {
-        int a = 123451234512345;
-        System.out.println(a);
+        // int a = 123451234512345; // out of Integer Range
+        // System.out.println(a);
     }
 }
 

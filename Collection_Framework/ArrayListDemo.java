@@ -1,4 +1,4 @@
-package Collection_Framework.ArrayList_Examples;
+package Collection_Framework;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,7 +7,8 @@ import java.util.ListIterator;
 
 /**
  * ArrayList class Demo
- *  - https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+ *  - Doc: https://docs.oracle.com/javase/8/docs/api/java/util/ArrayList.html
+ *  - Ref: https://www.geeksforgeeks.org/arraylist-in-java/
  */
 public class ArrayListDemo {
 
