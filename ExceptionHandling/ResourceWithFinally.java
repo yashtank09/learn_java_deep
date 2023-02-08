@@ -17,7 +17,7 @@ public class ResourceWithFinally {
             // reading file content by giving a object referance to the Scanner object
             sc = new Scanner(fi);
             int a = sc.nextInt();
-            int b = sc.nextInt();
+            // int b = sc.nextInt();
             int c = sc.nextInt();
             System.out.println(a/c); // if error occurs then closing statements which are given below will not execute so we need to handle with using try/finally
         } finally{ 
@@ -33,7 +33,6 @@ public class ResourceWithFinally {
         try {
             meth1();    
         } catch (Exception e) {
-            // TODO: handle exception
             System.out.println(e);
         }
         // if in meth1 error will handdled by try/finally block then below code will raise an error

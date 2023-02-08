@@ -22,5 +22,8 @@ public class StringObjects {
 
         System.out.println(str5==str6);
 
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str3);
     }
 }

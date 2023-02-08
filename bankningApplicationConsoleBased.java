@@ -62,77 +62,78 @@ class BankDetails{
 }
 public class bankningApplicationConsoleBased {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // Create initial accounts
-        int n = sc.nextInt();
-        BankDetails bd[] = new BankDetails[n];
+        try (Scanner sc = new Scanner(System.in)) {
+            // Create initial accounts
+            int n = sc.nextInt();
+            BankDetails bd[] = new BankDetails[n];
 
-        for (int i=0; i < bd.length; i++){
-            bd[i] = new BankDetails();
-            bd[i].openAccount();
-        }
-
-        int ch;
-        do {
-            System.out.println("\n\t|   Banking System Application   |");
-            System.out.println("1. Display All Account Details \n2. Search by Account Number \n3. Diposit Amount \n4. Withdraw the amount \n5. Exit");
-            System.out.println("Enter You Choice: ");
-            ch = sc.nextInt();
-            switch(ch){
-                case 1:
-                    for(int i=0; i<bd.length; i++){
-                        bd[i].showAccountDetails();
-                    }
-                    break;
-                case 2:
-                    System.out.println("Enter Account number you want to search: ");
-                    String accNo = sc.next();
-                    boolean find = false;
-                    for (int i=0; i<bd.length; i++){
-                        find = bd[i].search(accNo);
-                        if(find){
-                            break;
-                        }
-                    }
-                    if(!find){
-                        System.out.println("Search failed! Account dosen't Exist...");
-                    }
-                    break;
-                case 3:
-                    System.out.println("Enter Account Number: ");
-                    accNo = sc.next();
-                    find = false;    
-                    for(int i=0; i < bd.length; i++){
-                        find = bd[i].search(accNo);
-                        if(find){
-                            bd[i].deposit();
-                            break;
-                        }
-                    }    
-                    if(!find){
-                        System.out.println("Search failed! Account dosen't Exist...");
-                    }      
-                    break;
-                case 4:
-                    System.out.println("Enter Account Number: ");
-                    accNo = sc.next();
-                    find = false;    
-                    for(int i=0; i < bd.length; i++){
-                        find = bd[i].search(accNo);
-                        if(find){
-                            bd[i].withdrawl();
-                            break;
-                        }
-                    }    
-                    if(!find){
-                        System.out.println("Search failed! Account dosen't Exist...");
-                    }
-                    break;
-                case 5:
-                    System.out.println("See you soon...");
-                    break;
+            for (int i=0; i < bd.length; i++){
+                bd[i] = new BankDetails();
+                bd[i].openAccount();
             }
 
-        }while(ch != 5);
+            int ch;
+            do {
+                System.out.println("\n\t|   Banking System Application   |");
+                System.out.println("1. Display All Account Details \n2. Search by Account Number \n3. Diposit Amount \n4. Withdraw the amount \n5. Exit");
+                System.out.println("Enter You Choice: ");
+                ch = sc.nextInt();
+                switch(ch){
+                    case 1:
+                        for(int i=0; i<bd.length; i++){
+                            bd[i].showAccountDetails();
+                        }
+                        break;
+                    case 2:
+                        System.out.println("Enter Account number you want to search: ");
+                        String accNo = sc.next();
+                        boolean find = false;
+                        for (int i=0; i<bd.length; i++){
+                            find = bd[i].search(accNo);
+                            if(find){
+                                break;
+                            }
+                        }
+                        if(!find){
+                            System.out.println("Search failed! Account dosen't Exist...");
+                        }
+                        break;
+                    case 3:
+                        System.out.println("Enter Account Number: ");
+                        accNo = sc.next();
+                        find = false;    
+                        for(int i=0; i < bd.length; i++){
+                            find = bd[i].search(accNo);
+                            if(find){
+                                bd[i].deposit();
+                                break;
+                            }
+                        }    
+                        if(!find){
+                            System.out.println("Search failed! Account dosen't Exist...");
+                        }      
+                        break;
+                    case 4:
+                        System.out.println("Enter Account Number: ");
+                        accNo = sc.next();
+                        find = false;    
+                        for(int i=0; i < bd.length; i++){
+                            find = bd[i].search(accNo);
+                            if(find){
+                                bd[i].withdrawl();
+                                break;
+                            }
+                        }    
+                        if(!find){
+                            System.out.println("Search failed! Account dosen't Exist...");
+                        }
+                        break;
+                    case 5:
+                        System.out.println("See you soon...");
+                        break;
+                }
+
+            }while(ch != 5);
+        }
     }
 }

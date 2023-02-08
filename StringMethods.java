@@ -57,7 +57,7 @@ public class StringMethods {
         System.out.println(j3.compareTo(j2)); // Fisrt String is smaller then next string return difference between assci codes
         System.out.println(j.compareToIgnoreCase(j2));
 
-        System.out.println(j.valueOf(as));
+        System.out.println(String.valueOf(as));
 
         // For practicing REGULAR EXPRESSIONS: https://regexr.com/
 

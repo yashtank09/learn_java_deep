@@ -26,6 +26,7 @@ public class sumofArrayInteger {
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
         int arCount = Integer.parseInt(bufferedReader.readLine().trim());
+        System.out.println(arCount);
 
         List<Integer> ar = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
                 .map(Integer::parseInt)

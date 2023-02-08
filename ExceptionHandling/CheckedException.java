@@ -6,7 +6,10 @@ import java.io.*;
  */
 public class CheckedException {
     static void func1(){
-        FileInputStream it = new FileInputStream("My.txt"); // there's is possiblity of exception, that is Checked exception
+        try (FileInputStream it = new FileInputStream("My.txt")) {
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     static void func2(){
         func1();

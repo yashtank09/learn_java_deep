@@ -13,5 +13,6 @@ class TestPack{
 		System.out.println("This is thired inner Package's class printing...");
 		package_Demo3 TD3 = new package_Demo3();
 		TD2.display();
+		TD3.display();
 	}
 }

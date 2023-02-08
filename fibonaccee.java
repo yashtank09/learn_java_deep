@@ -7,7 +7,8 @@ public class fibonaccee {
 
     public static void main(String[] args) {
 
-        Scanner user_input = new Scanner(System.in);
+        try (Scanner user_input = new Scanner(System.in)) {
+        }
         /*
          * int fib1 = 0, fib2 = 1, i, n;
          * n = user_input.nextInt();

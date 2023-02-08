@@ -2,16 +2,15 @@ import java.util.Scanner;
 
 class scannerClass{
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        
-        int integer = sc.nextInt();
-        sc.nextLine();
-        String str = sc.nextLine();
-        
-        System.out.println("Your Integer: " + integer);
-        System.out.println("Your String: " + str);
-        // char character = sc.next().charAt(4); //.char() parameter take index value and give that charachter's value
+        try (Scanner sc = new Scanner(System.in)) {
+            int integer = sc.nextInt();
+            sc.nextLine();
+            String str = sc.nextLine();
+            
+            System.out.println("Your Integer: " + integer);
+            System.out.println("Your String: " + str);
+            // char character = sc.next().charAt(4); //.char() parameter take index value and give that charachter's value
+        }
         
         
         
