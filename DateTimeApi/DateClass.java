@@ -2,7 +2,7 @@ package DateTimeApi;
 
 import java.util.Date;
 
-/** Date class example
+/** Date class example this is old class which is depricated in newr versions of java.
  *  - Doc: https://docs.oracle.com/javase/8/docs/api/java/util/Date.html
  *  - This date class represents time from 1900
  */
