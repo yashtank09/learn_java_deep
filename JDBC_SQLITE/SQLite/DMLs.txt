@@ -1,0 +1,37 @@
+sqlite> .open univ.db
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+50|CHEM
+sqlite> INSERT INTO dept VALUES(60, 'EEE');
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+50|CHEM
+60|EEE
+sqlite> DELETE FROM dept WHERE dname='EEE';
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+50|CHEM
+sqlite> UPDATE dept SET dname='Aero' WHERE deptno=50;
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+50|Aero
+sqlite> UPDATE dept SET deptno=60 WHERE dname='Aero';
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+60|Aero
+sqlite>

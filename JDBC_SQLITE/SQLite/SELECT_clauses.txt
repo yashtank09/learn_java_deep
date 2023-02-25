@@ -1,0 +1,225 @@
+sqlite> SELECT * FROM students;
+1|Ajay|Delhi|10
+2|Vijay|Kolkata|10
+3|Ajay|Mumbai|20
+4|Ramesh|Delhi|30
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+9|Michel|Cochin|10
+10|Pavan|Vijaywada|20
+11|Suraj|Hydrabad|10
+12|Altaf|Bangaluru|40
+13|Ravi|Indore|20
+14|Verma|Delhi|20
+15|Sharma|Vizag|10
+sqlite> SELECT name FROM students;
+Ajay
+Vijay
+Ajay
+Ramesh
+Suneeta
+Anita
+Raj
+Ali
+Michel
+Pavan
+Suraj
+Altaf
+Ravi
+Verma
+Sharma
+sqlite> SELECT roll, name FROM students;
+1|Ajay
+2|Vijay
+3|Ajay
+4|Ramesh
+5|Suneeta
+6|Anita
+7|Raj
+8|Ali
+9|Michel
+10|Pavan
+11|Suraj
+12|Altaf
+13|Ravi
+14|Verma
+15|Sharma
+sqlite> SELECT * FROM students;
+1|Ajay|Delhi|10
+2|Vijay|Kolkata|10
+3|Ajay|Mumbai|20
+4|Ramesh|Delhi|30
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+9|Michel|Cochin|10
+10|Pavan|Vijaywada|20
+11|Suraj|Hydrabad|10
+12|Altaf|Bangaluru|40
+13|Ravi|Indore|20
+14|Verma|Delhi|20
+15|Sharma|Vizag|10
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+50|CHEM
+sqlite> SELECT dept FROM students;
+Parse error: no such column: dept
+  SELECT dept FROM students;
+         ^--- error here
+sqlite> SELECT deptno FROM students;
+10
+10
+20
+30
+40
+30
+30
+40
+10
+20
+10
+40
+20
+20
+10
+sqlite> SELECT DESTINCT deptno FROM students;
+Parse error: no such column: DESTINCT
+  SELECT DESTINCT deptno FROM students;
+         ^--- error here
+sqlite> SELECT DISTINCT deptno FROM students;
+10
+20
+30
+40
+sqlite> SELECT DISTINCT name FROM students;
+Ajay
+Vijay
+Ramesh
+Suneeta
+Anita
+Raj
+Ali
+Michel
+Pavan
+Suraj
+Altaf
+Ravi
+Verma
+Sharma
+sqlite> SELECT DISTINCT name, deptno FROM students;
+Ajay|10
+Vijay|10
+Ajay|20
+Ramesh|30
+Suneeta|40
+Anita|30
+Raj|30
+Ali|40
+Michel|10
+Pavan|20
+Suraj|10
+Altaf|40
+Ravi|20
+Verma|20
+Sharma|10
+sqlite> SELECT * FROM students WHERE city='Delhi';
+1|Ajay|Delhi|10
+4|Ramesh|Delhi|30
+14|Verma|Delhi|20
+sqlite> SELECT * FROM students WHERE city<>'Delhi'; #Not Equel to
+   ...> ;
+2|Vijay|Kolkata|10
+3|Ajay|Mumbai|20
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+9|Michel|Cochin|10
+10|Pavan|Vijaywada|20
+11|Suraj|Hydrabad|10
+12|Altaf|Bangaluru|40
+13|Ravi|Indore|20
+15|Sharma|Vizag|10
+Parse error: near "#Not": syntax error
+  #Not Equel to ;
+  ^--- error here
+sqlite> SELECT * FROM students WHERE deptno>30;
+5|Suneeta|Lucknow|40
+8|Ali|Lucknow|40
+12|Altaf|Bangaluru|40
+sqlite> SELECT * FROM students WHERE deptno>=30;
+4|Ramesh|Delhi|30
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+12|Altaf|Bangaluru|40
+sqlite> SELECT * FROM students WHERE deptno>30 AND city='Lucknow';
+5|Suneeta|Lucknow|40
+8|Ali|Lucknow|40
+sqlite> SELECT * FROM students WHERE name LIKE 'A%';
+1|Ajay|Delhi|10
+3|Ajay|Mumbai|20
+6|Anita|Kolkata|30
+8|Ali|Lucknow|40
+12|Altaf|Bangaluru|40
+sqlite> SELECT * FROM students WHERE name LIKE '%y';
+1|Ajay|Delhi|10
+2|Vijay|Kolkata|10
+3|Ajay|Mumbai|20
+sqlite> SELECT * FROM students WHERE name LIKE '%m%';
+4|Ramesh|Delhi|30
+9|Michel|Cochin|10
+14|Verma|Delhi|20
+15|Sharma|Vizag|10
+sqlite> SELECT * FROM students WHERE deptno BETWEEN 20 AND 40;
+3|Ajay|Mumbai|20
+4|Ramesh|Delhi|30
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+10|Pavan|Vijaywada|20
+12|Altaf|Bangaluru|40
+13|Ravi|Indore|20
+14|Verma|Delhi|20
+sqlite> SELECT * FROM students WHERE deptno BETWEEN 20 AND 30;
+3|Ajay|Mumbai|20
+4|Ramesh|Delhi|30
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+10|Pavan|Vijaywada|20
+13|Ravi|Indore|20
+14|Verma|Delhi|20
+sqlite> SELECT * FROM students WHERE roll BETWEEN 5 AND 11;
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+9|Michel|Cochin|10
+10|Pavan|Vijaywada|20
+11|Suraj|Hydrabad|10
+sqlite> SELECT * FROM students WHERE city in ('Delhi', 'Jaipur');
+1|Ajay|Delhi|10
+4|Ramesh|Delhi|30
+14|Verma|Delhi|20
+sqlite> SELECT * FROM students WHERE city NOT IN ('Delhi', 'Jaipur');
+2|Vijay|Kolkata|10
+3|Ajay|Mumbai|20
+5|Suneeta|Lucknow|40
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+8|Ali|Lucknow|40
+9|Michel|Cochin|10
+10|Pavan|Vijaywada|20
+11|Suraj|Hydrabad|10
+12|Altaf|Bangaluru|40
+13|Ravi|Indore|20
+15|Sharma|Vizag|10
+sqlite>

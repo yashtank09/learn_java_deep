@@ -1,0 +1,259 @@
+sqlite> SELECT * FROM dept;
+10|CSE
+20|ECE
+30|CIVIL
+40|MECH
+50|CHEM
+
+sqlite> SELECT * FROM dept ORDER BY dename;
+Parse error: no such column: dename
+  SELECT * FROM dept ORDER BY dename;
+                error here ---^
+
+sqlite> SELECT * FROM dept ORDER BY dname;
+50|CHEM
+30|CIVIL
+10|CSE
+20|ECE
+40|MECH
+sqlite> SELECT * FROM dept ORDER BY dname desc;
+40|MECH
+20|ECE
+10|CSE
+30|CIVIL
+50|CHEM
+
+sqlite> SELECT * FROM students ORDER BY name;
+1|Ajay|Delhi|10
+3|Ajay|Mumbai|20
+8|Ali|Lucknow|40
+12|Altaf|Bangaluru|40
+6|Anita|Kolkata|30
+9|Michel|Cochin|10
+10|Pavan|Vijaywada|20
+7|Raj|Kolkata|30
+4|Ramesh|Delhi|30
+13|Ravi|Indore|20
+15|Sharma|Vizag|10
+5|Suneeta|Lucknow|40
+11|Suraj|Hydrabad|10
+14|Verma|Delhi|20
+2|Vijay|Kolkata|10
+
+sqlite> SELECT * FROM students ORDER BY name DESC;
+2|Vijay|Kolkata|10
+14|Verma|Delhi|20
+11|Suraj|Hydrabad|10
+5|Suneeta|Lucknow|40
+15|Sharma|Vizag|10
+13|Ravi|Indore|20
+4|Ramesh|Delhi|30
+7|Raj|Kolkata|30
+10|Pavan|Vijaywada|20
+9|Michel|Cochin|10
+6|Anita|Kolkata|30
+12|Altaf|Bangaluru|40
+8|Ali|Lucknow|40
+1|Ajay|Delhi|10
+3|Ajay|Mumbai|20
+
+sqlite> SELECT * FROM students, dept;
+1|Ajay|Delhi|10|10|CSE
+1|Ajay|Delhi|10|20|ECE
+1|Ajay|Delhi|10|30|CIVIL
+1|Ajay|Delhi|10|40|MECH
+1|Ajay|Delhi|10|50|CHEM
+2|Vijay|Kolkata|10|10|CSE
+2|Vijay|Kolkata|10|20|ECE
+2|Vijay|Kolkata|10|30|CIVIL
+2|Vijay|Kolkata|10|40|MECH
+2|Vijay|Kolkata|10|50|CHEM
+3|Ajay|Mumbai|20|10|CSE
+3|Ajay|Mumbai|20|20|ECE
+3|Ajay|Mumbai|20|30|CIVIL
+3|Ajay|Mumbai|20|40|MECH
+3|Ajay|Mumbai|20|50|CHEM
+4|Ramesh|Delhi|30|10|CSE
+4|Ramesh|Delhi|30|20|ECE
+4|Ramesh|Delhi|30|30|CIVIL
+4|Ramesh|Delhi|30|40|MECH
+4|Ramesh|Delhi|30|50|CHEM
+5|Suneeta|Lucknow|40|10|CSE
+5|Suneeta|Lucknow|40|20|ECE
+5|Suneeta|Lucknow|40|30|CIVIL
+5|Suneeta|Lucknow|40|40|MECH
+5|Suneeta|Lucknow|40|50|CHEM
+6|Anita|Kolkata|30|10|CSE
+6|Anita|Kolkata|30|20|ECE
+6|Anita|Kolkata|30|30|CIVIL
+6|Anita|Kolkata|30|40|MECH
+6|Anita|Kolkata|30|50|CHEM
+7|Raj|Kolkata|30|10|CSE
+7|Raj|Kolkata|30|20|ECE
+7|Raj|Kolkata|30|30|CIVIL
+7|Raj|Kolkata|30|40|MECH
+7|Raj|Kolkata|30|50|CHEM
+8|Ali|Lucknow|40|10|CSE
+8|Ali|Lucknow|40|20|ECE
+8|Ali|Lucknow|40|30|CIVIL
+8|Ali|Lucknow|40|40|MECH
+8|Ali|Lucknow|40|50|CHEM
+9|Michel|Cochin|10|10|CSE
+9|Michel|Cochin|10|20|ECE
+9|Michel|Cochin|10|30|CIVIL
+9|Michel|Cochin|10|40|MECH
+9|Michel|Cochin|10|50|CHEM
+10|Pavan|Vijaywada|20|10|CSE
+10|Pavan|Vijaywada|20|20|ECE
+10|Pavan|Vijaywada|20|30|CIVIL
+10|Pavan|Vijaywada|20|40|MECH
+10|Pavan|Vijaywada|20|50|CHEM
+11|Suraj|Hydrabad|10|10|CSE
+11|Suraj|Hydrabad|10|20|ECE
+11|Suraj|Hydrabad|10|30|CIVIL
+11|Suraj|Hydrabad|10|40|MECH
+11|Suraj|Hydrabad|10|50|CHEM
+12|Altaf|Bangaluru|40|10|CSE
+12|Altaf|Bangaluru|40|20|ECE
+12|Altaf|Bangaluru|40|30|CIVIL
+12|Altaf|Bangaluru|40|40|MECH
+12|Altaf|Bangaluru|40|50|CHEM
+13|Ravi|Indore|20|10|CSE
+13|Ravi|Indore|20|20|ECE
+13|Ravi|Indore|20|30|CIVIL
+13|Ravi|Indore|20|40|MECH
+13|Ravi|Indore|20|50|CHEM
+14|Verma|Delhi|20|10|CSE
+14|Verma|Delhi|20|20|ECE
+14|Verma|Delhi|20|30|CIVIL
+14|Verma|Delhi|20|40|MECH
+14|Verma|Delhi|20|50|CHEM
+15|Sharma|Vizag|10|10|CSE
+15|Sharma|Vizag|10|20|ECE
+15|Sharma|Vizag|10|30|CIVIL
+15|Sharma|Vizag|10|40|MECH
+15|Sharma|Vizag|10|50|CHEM
+
+sqlite> SELECT * FROM students, dept WHERE students.deptno=dept.deptno;
+1|Ajay|Delhi|10|10|CSE
+2|Vijay|Kolkata|10|10|CSE
+3|Ajay|Mumbai|20|20|ECE
+4|Ramesh|Delhi|30|30|CIVIL
+5|Suneeta|Lucknow|40|40|MECH
+6|Anita|Kolkata|30|30|CIVIL
+7|Raj|Kolkata|30|30|CIVIL
+8|Ali|Lucknow|40|40|MECH
+9|Michel|Cochin|10|10|CSE
+10|Pavan|Vijaywada|20|20|ECE
+11|Suraj|Hydrabad|10|10|CSE
+12|Altaf|Bangaluru|40|40|MECH
+13|Ravi|Indore|20|20|ECE
+14|Verma|Delhi|20|20|ECE
+15|Sharma|Vizag|10|10|CSE
+
+sqlite> SELECT * FROM students JOIN dept on students.deptno=dept.deptno;
+1|Ajay|Delhi|10|10|CSE
+2|Vijay|Kolkata|10|10|CSE
+3|Ajay|Mumbai|20|20|ECE
+4|Ramesh|Delhi|30|30|CIVIL
+5|Suneeta|Lucknow|40|40|MECH
+6|Anita|Kolkata|30|30|CIVIL
+7|Raj|Kolkata|30|30|CIVIL
+8|Ali|Lucknow|40|40|MECH
+9|Michel|Cochin|10|10|CSE
+10|Pavan|Vijaywada|20|20|ECE
+11|Suraj|Hydrabad|10|10|CSE
+12|Altaf|Bangaluru|40|40|MECH
+13|Ravi|Indore|20|20|ECE
+14|Verma|Delhi|20|20|ECE
+15|Sharma|Vizag|10|10|CSE
+
+sqlite> SELECT * FROM students S JOIN dept D on S.deptno=D.deptno;
+1|Ajay|Delhi|10|10|CSE
+2|Vijay|Kolkata|10|10|CSE
+3|Ajay|Mumbai|20|20|ECE
+4|Ramesh|Delhi|30|30|CIVIL
+5|Suneeta|Lucknow|40|40|MECH
+6|Anita|Kolkata|30|30|CIVIL
+7|Raj|Kolkata|30|30|CIVIL
+8|Ali|Lucknow|40|40|MECH
+9|Michel|Cochin|10|10|CSE
+10|Pavan|Vijaywada|20|20|ECE
+11|Suraj|Hydrabad|10|10|CSE
+12|Altaf|Bangaluru|40|40|MECH
+13|Ravi|Indore|20|20|ECE
+14|Verma|Delhi|20|20|ECE
+15|Sharma|Vizag|10|10|CSE
+
+sqlite> SELECT * FROM students S, JOIN dept D on S.deptno=D.deptno;
+Parse error: near "JOIN": syntax error
+  SELECT * FROM students S, JOIN dept D on S.deptno=D.deptno;
+              error here ---^
+
+sqlite> SELECT * FROM students S JOIN dept D on S.deptno=D.deptno;
+1|Ajay|Delhi|10|10|CSE
+2|Vijay|Kolkata|10|10|CSE
+3|Ajay|Mumbai|20|20|ECE
+4|Ramesh|Delhi|30|30|CIVIL
+5|Suneeta|Lucknow|40|40|MECH
+6|Anita|Kolkata|30|30|CIVIL
+7|Raj|Kolkata|30|30|CIVIL
+8|Ali|Lucknow|40|40|MECH
+9|Michel|Cochin|10|10|CSE
+10|Pavan|Vijaywada|20|20|ECE
+11|Suraj|Hydrabad|10|10|CSE
+12|Altaf|Bangaluru|40|40|MECH
+13|Ravi|Indore|20|20|ECE
+14|Verma|Delhi|20|20|ECE
+15|Sharma|Vizag|10|10|CSE
+
+sqlite> SELECT city FROM students GROUP BY city;
+Bangaluru
+Cochin
+Delhi
+Hydrabad
+Indore
+Kolkata
+Lucknow
+Mumbai
+Vijaywada
+Vizag
+
+sqlite> SELECT count(*), city FROM students GROUP BY city;
+1|Bangaluru
+1|Cochin
+3|Delhi
+1|Hydrabad
+1|Indore
+3|Kolkata
+2|Lucknow
+1|Mumbai
+1|Vijaywada
+1|Vizag
+
+sqlite> SELECT count(*), city FROM students GROUP BY city HAVING count(*)>=2;
+3|Delhi
+3|Kolkata
+2|Lucknow
+
+sqlite> SELECT count(*), city FROM students GROUP BY city HAVING Kolkata OR Delhi;
+Parse error: no such column: Kolkata
+  count(*), city FROM students GROUP BY city HAVING Kolkata OR Delhi;
+                                      error here ---^
+
+sqlite> SELECT count(*), city FROM students GROUP BY city HAVING city=kolkata;
+Parse error: no such column: kolkata
+  (*), city FROM students GROUP BY city HAVING city=kolkata;
+                                      error here ---^
+
+sqlite> SELECT count(*), city FROM students GROUP BY city;
+1|Bangaluru
+1|Cochin
+3|Delhi
+1|Hydrabad
+1|Indore
+3|Kolkata
+2|Lucknow
+1|Mumbai
+1|Vijaywada
+1|Vizag

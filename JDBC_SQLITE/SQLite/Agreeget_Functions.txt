@@ -1,0 +1,78 @@
+sqlite> .open univ.db
+sqlite> SELECT COUNT(*) FROM students;
+15
+sqlite> SELECT COUNT(roll) FROM students;
+15
+sqlite> SELECT COUNT(name) FROM students;
+15
+sqlite> SELECT COUNT(distinct name) FROM students;
+14
+sqlite> SELECT MAX(roll) FROM students;
+15
+sqlite> SELECT MIN(roll) FROM students;
+1
+sqlite> SELECT SUM(roll) FROM students;
+120
+sqlite> SELECT AVG(roll) FROM students;
+8.0
+sqlite> SELECT MAX(roll), city FROM students GROUP BY city;
+12|Bangaluru
+9|Cochin
+14|Delhi
+11|Hydrabad
+13|Indore
+7|Kolkata
+8|Lucknow
+3|Mumbai
+10|Vijaywada
+15|Vizag
+sqlite> SELECT COUNT(roll), city FROM students GROUP BY city;
+1|Bangaluru
+1|Cochin
+3|Delhi
+1|Hydrabad
+1|Indore
+3|Kolkata
+2|Lucknow
+1|Mumbai
+1|Vijaywada
+1|Vizag
+sqlite> SELECT * FROM students WHERE city='Kolkata';
+2|Vijay|Kolkata|10
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+sqlite> SELECT * FROM students WHERE city='Delhi';
+1|Ajay|Delhi|10
+4|Ramesh|Delhi|30
+14|Verma|Delhi|20
+
+    -- Set operations --
+sqlite> SELECT * FROM students WHERE city='Delhi' UNION SELECT * FROM students WHERE city='Kolkata';
+1|Ajay|Delhi|10
+2|Vijay|Kolkata|10
+4|Ramesh|Delhi|30
+6|Anita|Kolkata|30
+7|Raj|Kolkata|30
+14|Verma|Delhi|20
+sqlite> SELECT * FROM students WHERE city='Delhi' UNION SELECT * FROM students WHERE city='Mumbai';
+1|Ajay|Delhi|10
+3|Ajay|Mumbai|20
+4|Ramesh|Delhi|30
+14|Verma|Delhi|20
+sqlite> SELECT roll, name FROM students WHERE city='Delhi' UNION SELECT roll, name FROM students WHERE city='Mumbai';
+1|Ajay
+3|Ajay
+4|Ramesh
+14|Verma
+sqlite> SELECT name FROM students WHERE city='Delhi' UNION SELECT name FROM students WHERE city='Mumbai';
+Ajay
+Ramesh
+Verma
+sqlite> SELECT name FROM students WHERE city='Delhi' INTERSECT SELECT name FROM students WHERE city='Mumbai';
+Ajay
+sqlite> SELECT name FROM students WHERE city='Delhi' INTERSECT SELECT name FROM students WHERE city='Kolkata';
+sqlite> SELECT name FROM students WHERE city='Delhi' EXCEPT SELECT name FROM students WHERE city='Kolkata';
+Ajay
+Ramesh
+Verma
+sqlite>
