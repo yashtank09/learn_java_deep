@@ -21,6 +21,7 @@ public class finalKeyword_first {
 
     // another static final variable
     static final int RANGE;
+
     // blank fina variable
     final int VALUE; // Not initialized
 
@@ -35,7 +36,7 @@ public class finalKeyword_first {
     // final variable initialization using Static block 
     static {
         RANGE = 199;
-    }// for initializing final variable using static keyword we must make it as static.
+    }
 
     // This is an instance block | More about it: https://www.geeksforgeeks.org/instance-initialization-block-iib-java/
     {

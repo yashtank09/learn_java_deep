@@ -54,12 +54,28 @@ public class AbstractionFirstExample {
             sb.meth2; XX
          */
 
-         /* 
+        /* 
            Now after creating abstract class and overriding abstract methods we can create an referance of abstracct class and instanciate with object of sub class.
            Having referance of an abstract class we can assign a object of sub class
-          */
-          SuperAbst sr = new subAbst();
-          sr.meth1();
-          sr.math2();
+        */
+        SuperAbst sr = new subAbst();
+        sr.meth1();
+        sr.math2();
+
+
+        // anonymous object methods / anonymous class
+        SuperAbst sra = new SuperAbst() {
+            public void meth1(){
+                System.out.println("hello!");
+            }
+
+            @Override
+            public void math2() {
+                throw new UnsupportedOperationException("Unimplemented method 'math2'");
+            }
+        };
+
+        sra.meth1();
+        sra.math2();        
     }
 }
