@@ -1,7 +1,7 @@
 package Basics.Conditional_Statement;
 public class digitsInWords {
     public static void main(String[] args) {
-        int n=1234, r;
+        int n=258, r;
         String s="";
 
         while(n>0){
